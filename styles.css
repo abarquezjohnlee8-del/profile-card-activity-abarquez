@@ -1,78 +1,132 @@
-/* Reset and Page Layout */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-/* Card Component */
-.card {
- background-color: #ffffff;
- padding: 30px;
- border-radius: 12px;
- box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
- text-align: center;
- max-width: 300px;
- transition: background-color 0.3s;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-
-.card img {
- width: 100px;
- height: 100px;
- border-radius: 50%;
- object-fit: cover;
- margin-bottom: 15px;
+body {
+    background-color: #219009;
+    color: #cb382e;
+    line-height: 1.6;
 }
 
-
-.title {
- color: #007bff;
- font-weight: 600;
- font-size: 0.95rem;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
 }
 
-
-.bio {
- font-size: 0.9rem;
- line-height: 1.4;
- margin: 15px 0;
+/* Home & General */
+h1 {
+    font-size: 2.4rem;
+    color: #9e7c63;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-
-/* Interactive Button */
-button {
- background-color: #007bff;
- color: #ffffff;
- border: none;
- padding: 10px 20px;
- border-radius: 6px;
- cursor: pointer;
- font-weight: bold;
- transition: background-color 0.2s;
+.tagline {
+    text-align: center;
+    color: #483426;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
 }
 
-
-button:hover {
- background-color: #0056b3;
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
 }
 
-
-/* Dark Mode State Class */
-body.dark-mode {
- background-color: #1e1e2e;
- color: #ffffff;
+.nav-link, .back-link {
+    padding: 0.7rem 1.5rem;
+    background-color: #8b4513;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
 }
 
-
-body.dark-mode .card {
- background-color: #2b2b3d;
- color: #ffffff;
+.nav-link:hover, .back-link:hover {
+    background-color: #6b3410;
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    background: transparent;
+    color: #8b4513;
+    border: 2px solid #8b4513;
+}
 
+.back-link:hover {
+    background: #8b4513;
+    color: #fff;
+}
+
+h2 {
+    color: #6b4226;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #d2b48c;
+    padding-bottom: 0.5rem;
+}
+
+/* Menu Page */
+.drink-photo {
+    text-align: center;
+    margin: 2rem 0;
+}
+.drink-photo img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.drink-photo p {
+    margin-top: 0.6rem;
+    font-style: italic;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed #d2b48c;
+}
+.best-seller {
+    background: #0ad1e7;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+/* Order Page */
+ol {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+ol li {
+    margin-bottom: 0.7rem;
+}
+.note-box {
+    background: #f5e9d7;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.map-link {
+    color: #8b4513;
+    font-weight: 600;
+    text-decoration: none;
+}
+.map-link:hover {
+    text-decoration: underline;
+}
